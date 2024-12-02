@@ -1,0 +1,85 @@
+:root{
+    --bg-color: rgb(255, 255, 255);
+    --color: rgb(240,240,240);
+    --card-color: rgb(23,23,23);
+  }
+  
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-family: 'Questrial', monospace;
+    background-image: url('img/Waves.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Main */
+
+.Navigation {
+
+    position: fixed;
+     top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    color: rgb(146, 180, 255);
+    background-color: black;
+    padding-top: 2% ;
+    padding-bottom: 2%;
+    margin-bottom: 4em;
+
+
+}
+
+h1 {
+    font-weight: 1000;   
+    font-size: xxx-large;
+    color: rgb(62, 62, 255);
+}
+
+h1:hover {text-shadow: 0 0 5px #8684ea;}
+   
+
+
+h2 {color: rgb(62, 62, 255);
+    font-size: x-large;
+}
+
+li {
+   display: inline;
+   padding: 1em;
+   color:  rgb(146, 180, 255);
+   list-style-type: none;
+}
+
+
+.fragezeichen {
+    cursor: help;
+}
+
+.header {}
+
+.intro {
+
+    background-color: hsl(0, 0%, 100%);
+     padding: 60px;
+     margin-top: 10em;
+}
+
+.zwischenraum{
+    padding: 1em;
+}
+
+.textteil{
+    padding: 30px;
+    margin-left: 40px; margin-right: 40px;
+    color: rgb(146, 180, 255);
+    font-size: larger;
+    background-color: black;
+    border-radius: 20px;
+}
