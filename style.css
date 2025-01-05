@@ -10,31 +10,34 @@ body{
     padding: 0;
     background-color: var(--bg-color);
     color: var(--color);
-    font-family: 'Questrial', monospace;
-    background-image: url('img/Waves.jpeg');
+    font-family: 'Righteous', 'Questrial', monospace;
+    font-weight: 50;
+    background-image: url('img/gitter3.png');
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 /* Main */
 
 .Navigation {
 
-    position: fixed;
-     top: 0;
-    width: 100%;
+    position: center;
     overflow: hidden;
     background-color: var(--bg-color);
     display: flex;
     align-items: center;
     color: rgb(146, 180, 255);
-    background-color: black;
-    padding-top: 2% ;
-    padding-bottom: 2%;
-    margin-bottom: 4em;
-
-
+    background-color: #2D66AB ;
+    border-radius: 0px 0px 18px 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
 }
+
+a{ text-decoration: none;
+color: inherit;}
+
 
 h1 {
     font-weight: 1000;   
@@ -44,7 +47,11 @@ h1 {
 
 h1:hover {text-shadow: 0 0 5px #8684ea;}
    
-
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 h2 {color: rgb(62, 62, 255);
     font-size: x-large;
@@ -53,8 +60,9 @@ h2 {color: rgb(62, 62, 255);
 li {
    display: inline;
    padding: 1em;
-   color:  rgb(146, 180, 255);
+   color:  rgb(255, 255, 255);
    list-style-type: none;
+   text-decoration: none;
 }
 
 
@@ -83,3 +91,239 @@ li {
     background-color: black;
     border-radius: 20px;
 }
+
+/* Buttons */
+
+.ButtonReihe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.Button1{
+        position: relative;
+        width: 20rem;
+        height: 2rem;
+        border: none;
+        border-radius: 3rem;
+        cursor: pointer;
+        background: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+        font-size: 0.8rem;
+        font-weight: 100;
+        font-family: 'Righteous', sans-serif;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #FFBF28;
+        text-decoration: none;
+}
+
+.Button1::before{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        border-radius: 3rem;
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+        background: #FFBF28;
+        z-index: -1;
+        color: #FFBF28;
+        text-decoration: none;
+}
+
+.Button1:hover {
+        background: #FFBF28;
+        color: white;
+        font-size: 0.9rem;
+        width: 38em
+  }
+
+  .Button2{
+    position: relative;
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    background: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-family: 'Righteous', sans-serif;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #FF8E61;
+}
+
+.Button2::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    background: #FF8E61;
+    z-index: -1;
+    color: #FF8E61;
+}
+
+.Button2:hover {
+    background: #FF8E61;
+    color: white;
+    font-size: 0.9rem;
+    width: 30em;
+}
+
+.Button3{
+    position: relative;
+    width: 30rem;
+    height: 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    background: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-family: 'Righteous', sans-serif;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #FF8284;
+}
+
+.Button3::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    background: #FF8284;
+    z-index: -1;
+    color: #FF8284;
+}
+
+.Button3:hover {
+    background: #FF8284;
+    color: white;
+    font-size: 0.9rem;
+    width: 50em;
+}
+
+
+
+  /* Cards */
+
+.reihe1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+.reihe2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.CardOben{
+width: 320px;
+height: 320px;
+flex-shrink: 0;
+margin-top: 50px;
+margin-right: 15px ;
+border-radius: 15px;
+background-color: #2D66AB;
+display: flex;
+flex-wrap: wrap;
+align-items: center ;       
+justify-content: center;
+
+
+}
+
+.Card{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    margin-top: 15px;
+    margin-right: 15px ;
+    border-radius: 15px;
+    background-color: #2D66AB;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;       
+    justify-content: center;
+    }
+    
+
+    .flip-card{
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+        margin-top: 15px;
+        margin-right: 15px ;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center ;       
+        justify-content: center;
+        perspective: 1000px;
+        font-family: sans-serif;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.3s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateX(-180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+      }
+      
+      .flip-card-front {
+        background: #2D66AB;
+        color: rgb(255, 255, 255);
+      }
+
+      .flip-card-back {
+        background: #ffffff;;
+     color: #FF8284;;
+        transform: rotateX(-180deg);
+        border: 3px solid coral;
+    
+      }
+      
