@@ -123,47 +123,47 @@ li {
 }
 
 .Button1{
-        position: relative;
-        width: 20rem;
-        height: 2rem;
-        border: none;
-        border-radius: 3rem;
-        cursor: pointer;
-        background: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
-        font-size: 0.8rem;
-        font-weight: 100;
-        font-family: 'Righteous', sans-serif;
-        letter-spacing: 2px;
-        transition: all 0.3s;
+  position: relative;
+  width: 20rem;
+  height: 2rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: 'Righteous', sans-serif;
+  letter-spacing: 2px;
+  transition: all 0.3s;
 
-        margin-top: 20px;
-        margin-left: 20px;
-        color: #FFBF28;
-        text-decoration: none;
-       
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #FFBF28;
+  text-decoration: none;
+  
 }
 
 .Button1::before{
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        border-radius: 3rem;
-        width: 100%;
-        height: 100%;
-        padding: 2px;
-        background: #FFBF28;
-        z-index: -1;
-        color: #FFBF28;
-        text-decoration: none;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border-radius: 3rem;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  background: #FFBF28;
+  z-index: -1;
+  color: #FFBF28;
+  text-decoration: none;
 }
 
 .Button1:hover {
-        background: #FFBF28;
-        color: white;
-        font-size: 0.9rem;
-        width: 40em;
-        margin-left: 20px;
+  background: #FFBF28;
+  color: white;
+  font-size: 0.9rem;
+  width: 40em;
+  margin-left: 20px;
 
   }
 
