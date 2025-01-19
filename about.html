@@ -41,14 +41,45 @@
  
 <div class="aboutcontainer">
     <div class="logobild">
-        <img src="img/hannahlogoohnename.png" alt="Logo" class="bildsize">
+        <img src="img/hannahlogoohnename.png" alt="Logo" class="bildsize" class="clickableimage">
     </div>
-    <!-- <div class="textcontainer">
-        <p class="abouttext">Hi! This is my space, come on in!</p>
-    </div> -->
 
-<div class="speechbubble"> <h2>HELLO! WELCOME TO MY DESIGN SPACE.</h2> <p>Ich bin Hannah Adler, 21, und komme aus Bremen. Seit dem Wintersemester 24/25 studiere ich Kommunikationsdesign an der Fachhochschule Potsdam. 
+<div class="speechbubble"> <h2>HELLO! WELCOME TO MY DESIGN SPACE.</h2> <p>Ich bin Hannah, 21, und komme aus Bremen. Seit dem Wintersemester 24/25 studiere ich Kommunikationsdesign an der Fachhochschule Potsdam. 
     Schon immer habe ich mich für Design im Alltag interessiert und bereits ein Jahr im Bereich Werbung und Grafik am Theater gearbeitet. Arbeiten, die inner- und ausserhalb des Studiums entstehen, finden hier nun gesammelt Platz. </p> </div>
 
 </div> 
 </body>
+
+<!-- SOUND -->
+
+<audio id="hover-sound2" src="mp3/squish-pop-256410.mp3" preload="auto"></audio>
+<audio id="image-click-sound" src="mp3/hey.wav" preload="auto"></audio>
+
+<script>
+
+  const hoverSound2 = document.getElementById("hover-sound2");
+  hoverSound2.volume = 0.1; // Set volume to 10%
+
+  document.querySelectorAll(".Button1, .Button2, .Button3").forEach(button => {
+    button.addEventListener("mouseenter", () => {
+      hoverSound2.currentTime = 0; // Reset to start for rapid replay
+      hoverSound2.play();
+    });
+  });
+
+
+
+  // Select the image and sound element
+  const image = document.querySelector(".bildsize");
+  const clickSound = document.getElementById("image-click-sound");
+
+  // Add event listener for the click event
+  image.addEventListener("click", () => {
+    clickSound.currentTime = 0; // Reset the sound to start from the beginning
+    clickSound.play();         // Play the sound
+  });
+
+  clickSound.volume = 0.7;
+</script>
+
+</script>

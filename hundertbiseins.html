@@ -46,7 +46,7 @@
           <div class="textcontainerprojekt">
              <p>ein design für eine plattform auf der menschen ihre gegenseitige hilfe anbieten können. besonders bei handwerklichen arbeiten oder bei digitalen belangen. 
                 der fokus soll dabei auf generationsübergreifender wissensvermittlung und freundschaft liegen.</p>
-            <p> die seite sollte besonders übersichtlich und einfach gestaltet sein, um menschen, die den umgang mit dem internet nicht gewohnt sind, diesen zu erleichtern. dafür habe ich ebenfalls die piktogamme auf der startseite entworfen. </p><p>arbeit entstand für mein portfolio 2024. </p>
+            <p> die seite sollte besonders übersichtlich und einfach gestaltet sein, um menschen, die den umgang mit dem internet nicht gewohnt sind, diesen zu erleichtern. dafür habe ich ebenfalls die piktogamme auf der startseite entworfen. </p><p> die arbeit entstand für mein portfolio 2024. </p>
          </div>
  
          <div class="reihegallerie">
@@ -62,7 +62,36 @@
     <p> This is a very good footer with very good desine.</p>
 </footer>
 
+<!-- SOUND -->
 
+<audio id="hover-sound1" src="mp3/click-151673.mp3" preload="auto"></audio>
+<audio id="hover-sound2" src="mp3/squish-pop-256410.mp3" preload="auto"></audio>
+
+<script>
+  // Sound 1: For .flip-card elements
+  const hoverSound1 = document.getElementById("hover-sound1");
+  hoverSound1.volume = 0.1; // Set volume to 10%
+
+  document.querySelectorAll(".flip-card").forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      hoverSound1.currentTime = 0; // Reset to start for rapid replay
+      hoverSound1.play();
+    });
+  });
+
+  const hoverSound2 = document.getElementById("hover-sound2");
+  hoverSound2.volume = 0.1; // Set volume to 10%
+
+  // Combine the selectors for Button1, Button2, and Button3
+  document.querySelectorAll(".Button1, .Button2, .Button3").forEach(button => {
+    button.addEventListener("mouseenter", () => {
+      hoverSound2.currentTime = 0; // Reset to start for rapid replay
+      hoverSound2.play();
+    });
+  });
+
+
+</script>
 
 </body>
 </html>

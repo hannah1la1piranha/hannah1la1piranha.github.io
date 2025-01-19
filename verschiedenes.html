@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hannah Adler</title>
+    <!-- Link zu CSS -->
+        <link href="style.css" rel="stylesheet">
+    <!-- Font -->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+    <!-- Navigation -->
+    
+        <div class="Navigation">
+            <nav>
+                <ol>
+                <a href="index.html"> <li>HANNAH ADLER</li> </a>
+                    <!-- <a href="projekt1.html"><li>ABOUT</li> </a> -->
+                </ol>
+            </nav>
+    
+        </div>
+    
+    <!-- Buttons -->
+        <div class="ButtonReihe">
+            <a href="allprojects.html"> <button class="Button1"> PROJECTS</button> </a>
+            <a href="about.html"> <button class="Button2"> ABOUT</button></a>
+            <a href="contact.html"><button class="Button3">  CONTACT </button>
+        </div>    
+
+    <!-- Projekt -->
+    
+
+    <p class="mundfaulschrift">verschiedenes</p>
+
+    <div class="textcontainerprojekt">
+        <p> gemischte einzelne arbeiten, die keinem bestimmten thema unterliegen</p><p> entstanden zwischen 2023 und 2024. </p>
+    </div>
+
+    <div class="reihegallerie">
+        <img src="img/Design 03 b).jpg" class="mundfaulfoto">
+        <img src="img/Design 03 d).jpg" alt="cooles foto" class="mundfaulfoto">
+    </div>
+    <div class="textcontainerprojekt">
+        <p> poster und logo design für einen imaginären aktzeichenkurs. entstanden 2024. </p>
+    </div>
+    
+    <div class="reihegallerie">
+    <img src="img/scooter kids.jpg" class="mundfaulfoto">
+    </div>
+    <div class="textcontainerprojekt">
+        <p>digitale illustration zur übung. entstanden 2024. </p>
+    </div>
+
+    <div class="reihegallerie">
+        <img src="img/cheepchirp.png" class="cheepfoto">
+        </div>
+        <div class="textcontainerprojekt">
+            <p>werbung für eine imaginäre kaffeefirma. entstanden in der fhp projektwoche 2024. </p>
+        </div>
+
+
+
+        <footer class="footer">
+            <p> This is a very good footer with very good desine.</p>
+        </footer>
+
+        <!-- SOUND -->
+
+<audio id="hover-sound1" src="mp3/click-151673.mp3" preload="auto"></audio>
+<audio id="hover-sound2" src="mp3/squish-pop-256410.mp3" preload="auto"></audio>
+
+<script>
+  // Sound 1: For .flip-card elements
+  const hoverSound1 = document.getElementById("hover-sound1");
+  hoverSound1.volume = 0.1; // Set volume to 10%
+
+  document.querySelectorAll(".flip-card").forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      hoverSound1.currentTime = 0; // Reset to start for rapid replay
+      hoverSound1.play();
+    });
+  });
+
+  const hoverSound2 = document.getElementById("hover-sound2");
+  hoverSound2.volume = 0.1; // Set volume to 10%
+
+  // Combine the selectors for Button1, Button2, and Button3
+  document.querySelectorAll(".Button1, .Button2, .Button3").forEach(button => {
+    button.addEventListener("mouseenter", () => {
+      hoverSound2.currentTime = 0; // Reset to start for rapid replay
+      hoverSound2.play();
+    });
+  });
+
+
+</script>
+
+
+</body>
+</html>
